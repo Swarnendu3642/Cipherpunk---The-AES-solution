@@ -73,7 +73,7 @@ The backend will run at:
 ```bash
 cd aes-encryption-frontend
 npm install
-npm start
+npm run dev
 ```
 
 The frontend will run at:
@@ -122,9 +122,4 @@ Developed as part of a secure information handling project using AES encryption.
 
 Feel free to reach out on GitHub or via email for feedback or collaboration.
 
-```
 
----
-
-Let me know if you want this in a `.md` file or PDF, or if you'd like to include screenshots or code snippets!
-```
