@@ -1,0 +1,166 @@
+/* LandingPage.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.top-section {
+  background: linear-gradient(to bottom,  #071a07, #0d331a); /* Black to dark green gradient */
+}
+
+
+nav {
+  background: transparent; 
+  color: #00ff88;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #00ff88;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d0ffd0;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ff88;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background: none;
+  color: #b3ffcc;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  color: #00ff88;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #b0ffc0;
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  background-color: #0d1d0d;
+  border: 2px solid #00ff88;
+  border-radius: 16px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.2);
+}
+
+.icon-box:hover {
+  transform: scale(1.05);
+  background-color: #002f1f;
+}
+
+.icon-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-box span {
+  color: #00ff88;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Additional/Updated styles for About and Contact Sections */
+
+section {
+  padding: 60px 20px;
+  background-color: #0b0b0b; /* Slightly darker background for better contrast */
+  color: #ccffdd;
+  text-align: center;
+  border-top: 1px solid #00ff88;
+  border-bottom: 1px solid #00ff88;
+}
+
+section h2 {
+  color: #00ff88;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #00ff88;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+section p {
+  margin: 15px auto;
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #caffdd;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #44ff99;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .icon-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .icon-box {
+    width: 200px;
+  }
+
+  section p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
