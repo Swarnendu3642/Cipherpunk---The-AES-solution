@@ -1,13 +1,14 @@
+
 # 🔐 Cipherpunk
 
-This project implements **AES (Advanced Encryption Standard)** encryption for secure data transmission using a **Java Spring Boot backend** (developed in IntelliJ) and a **React-based frontend**.
+This project implements **AES (Advanced Encryption Standard)** encryption for secure data transmission using a **Java Spring Boot backend** (developed in IntelliJ) and a **React-based frontend** powered by **Vite**.
 
 ## 📂 Project Structure
 
 ```
 
 AES-Encryption-Project/
-├── aes-encryption-frontend/   # React-based user interface
+├── aes-encryption-frontend/   # React + Vite user interface
 └── aes-encryption/            # Java Spring Boot backend
 
 ````
@@ -17,31 +18,32 @@ AES-Encryption-Project/
 - 🔒 AES Encryption and Decryption (128/192/256-bit)
 - 🔁 Secure communication between frontend and backend
 - 📦 JSON-based REST API
-- 🌐 User-friendly web interface for message input/output
-- 🧩 User can choose between 128-bit, 192-bit, or 256-bit encryption key size
+- 🌐 Fast, modern web interface using React and Vite
+- 🔧 User can select key size: 128-bit, 192-bit, or 256-bit AES encryption
 
 ## 💻 Tech Stack
 
-### 🖥 Frontend (React)
+### 🖥 Frontend (React + Vite)
 - React.js (with hooks)
-- Axios (for API calls)
+- Vite (for fast build and hot reload)
+- Axios (for API communication)
 - Bootstrap / CSS for styling
 
 ### 🛠 Backend (Java Spring Boot)
 - Java 11+
 - Spring Boot Framework
 - AES Encryption using `javax.crypto` libraries
-- REST API implementation
+- RESTful APIs for encryption and decryption
 
 ## 🔐 AES Key Size Selection
 
-The application allows users to select the **AES key size** based on their encryption needs:
+Users can choose from the following AES key sizes before encrypting:
 
-- ✅ 128-bit (standard security)
-- ✅ 192-bit (intermediate security)
-- ✅ 256-bit (highest security)
+- ✅ **128-bit** – Standard level security
+- ✅ **192-bit** – Higher intermediate security
+- ✅ **256-bit** – Maximum security level
 
-Key size selection can be done through the frontend before encryption. Ensure Java Cryptography Extension (JCE) Unlimited Strength Policy is enabled for 256-bit keys if using older JDK versions.
+> ⚠️ For 256-bit encryption, ensure JDK supports Unlimited Strength Policy (usually enabled by default in Java 9+).
 
 ## 🚀 Getting Started
 
@@ -56,8 +58,8 @@ cd aes-encryption-project
 
 #### Open in IntelliJ:
 
-* Open the `aes-encryption` folder in IntelliJ
-* Make sure `Spring Boot` is configured
+* Navigate to `aes-encryption` folder
+* Ensure Spring Boot is configured properly
 
 #### Build & Run:
 
@@ -65,10 +67,10 @@ cd aes-encryption-project
 ./mvnw spring-boot:run
 ```
 
-The backend will run at:
+The backend will start at:
 `http://localhost:8080`
 
-### 3. Run Frontend (React)
+### 3. Run Frontend (React + Vite)
 
 ```bash
 cd aes-encryption-frontend
@@ -77,7 +79,7 @@ npm run dev
 ```
 
 The frontend will run at:
-`http://localhost:3000`
+`http://localhost:5173`
 
 ## 🔄 API Endpoints
 
@@ -97,29 +99,30 @@ Example Request:
 
 ## 📸 Screenshots
 
-> ![WhatsApp Image 2025-06-23 at 10 49 41_ac6dde19](https://github.com/user-attachments/assets/7a995a61-b1f2-4bca-ae86-73e4dfe532d9)
-> ![WhatsApp Image 2025-06-23 at 10 49 43_dd5d43b8](https://github.com/user-attachments/assets/d22ffd0d-972a-4290-9df8-f9d1c06b3a13)
+> ![WhatsApp Image 2025-06-23 at 10 49 41_d8354a84](https://github.com/user-attachments/assets/f94ed5c1-6003-45f1-bae3-34c670e1bd23)
+> ![WhatsApp Image 2025-06-23 at 10 49 43_dd36e2ee](https://github.com/user-attachments/assets/3fbbc1dd-980b-4248-b0fc-444922040dc5)
 
 
 
 ## 🛡 Security Note
 
-* AES encryption is performed in CBC mode with PKCS5 padding
-* Initialization Vector (IV) is dynamically generated for each session
-* Secret key is stored securely in backend configuration or generated on the fly
-* Supports configurable key lengths: 128, 192, 256 bits
+* AES algorithm in CBC mode with PKCS5 padding
+* Randomly generated Initialization Vector (IV) for each session
+* Keys managed securely at the backend
+* Supports key size configuration: 128, 192, 256 bits
 
 ## 📜 License
 
-This project is for educational purposes only.
+This project is created for educational purposes and demonstration of secure encryption techniques.
 
-## 🙋‍♂️ Author
+## 👥 Authors
 
-**Sagnik Bhunia & Swarnendu Roy**
-Developed as part of a secure information handling project using AES encryption.
+* **Swarnendu Roy**
+* **Sagnik Bhunia**
 
 ## 📫 Contact
 
-Feel free to reach out on GitHub or via email for feedback or collaboration.
+Feel free to connect on GitHub or email for collaboration, questions, or feedback.
 
+```
 
