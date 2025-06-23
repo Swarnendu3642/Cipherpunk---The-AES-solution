@@ -142,6 +142,7 @@ This project is created for educational purposes and demonstration of secure enc
 ## 📫 Contact
 
 Feel free to connect on GitHub or email for collaboration, questions, or feedback.
-
-```
+Mail us at 
+1. swarnenduroy3642@gmail.com
+2. bhunia.sagnik2002@gmail.com
 
