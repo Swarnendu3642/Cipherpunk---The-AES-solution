@@ -45,6 +45,17 @@ Users can choose from the following AES key sizes before encrypting:
 
 > ⚠️ For 256-bit encryption, ensure JDK supports Unlimited Strength Policy (usually enabled by default in Java 9+).
 
+### 📧 SMTP Setup (For Email Support)
+
+To use SMTP with Gmail, generate an **App Password**:
+
+1. Go to your [Google Account Security settings](https://myaccount.google.com/security).
+2. Enable **2-Step Verification** if not already enabled.
+3. Under "Signing in to Google", click **App Passwords**.
+4. Select **Mail** as the app and **Other** as the device.
+5. Generate and copy the 16-character app password.
+6. Use this app password in your `application.properties` or environment variables for SMTP authentication.
+   
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
